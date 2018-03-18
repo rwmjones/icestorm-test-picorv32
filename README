@@ -1,0 +1,10 @@
+Playing with picorv32 on the iCE40-HX8K
+
+# dnf install icestorm arachne-pnr yosys emacs-verilog-mode
+
+You must also build cross-gcc for riscv32, see:
+https://bugzilla.redhat.com/show_bug.cgi?id=1492341#c5
+
+$ git submodule init
+$ make
+$ [sudo] make prog

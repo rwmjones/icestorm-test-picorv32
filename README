@@ -8,3 +8,12 @@ https://bugzilla.redhat.com/show_bug.cgi?id=1492341#c5
 $ git submodule init
 $ make
 $ [sudo] make prog
+
+If the chip is programmed correctly, all 8 LEDs will flash on and
+off about once a second.
+
+You can connect to the serial port using:
+
+$ screen /dev/ttyUSB1 115200
+
+and if you hit ENTER you should get the logo and menu (see firmware.c).
